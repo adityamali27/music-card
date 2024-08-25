@@ -1,0 +1,326 @@
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        nav {
+            height: 75px;
+            background-color: rgba(0, 0, 0, 0.9);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            z-index: 1;
+            border-bottom: 2px solid white;
+        }
+
+        .icon {
+            height: 100%;
+            width: 20%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1;
+
+        }
+
+        .menu {
+            height: 100%;
+            width: 50%;
+            color: wheat;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        .menuicon {
+            display: none;
+
+            width: 20%;
+            height: 100%;
+            display: none;
+            align-items: center;
+            justify-content: space-evenly;
+            padding-top: 32px;
+            padding-left: 34px;
+
+
+        }
+
+        .close {
+            display: none;
+
+            width: 20%;
+            height: 100%;
+            display: none;
+            align-items: center;
+            justify-content: space-evenly;
+            padding-right: 8px;
+            padding-bottom: 6px;
+
+
+        }
+
+        .menu ol {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            list-style: none;
+        }
+
+        svg {
+
+            width: 50%;
+            height: 50%;
+            margin-left: 15px;
+            animation: fedd 0.5s linear;
+
+
+        }
+
+
+
+        .resmenu {
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            display: none;
+            position: relative;
+            color: wheat;
+            padding-bottom: 20px;
+            z-index: 2;
+            animation: fedd 0.5s linear;
+
+        }
+
+        .resmenu li {
+            border-bottom: 2px solid white;
+            width: 80%;
+            border-radius: 5px;
+            margin-left: 20px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            padding-left: 20px;
+        }
+
+        @keyframes fedd {
+            from {
+
+                opacity: 0.2;
+
+
+            }
+
+            to {
+
+                opacity: 1;
+
+            }
+
+        }
+
+        .contener{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #000;
+            color: wheat;
+        }
+
+        header {
+            height: 90vh;
+            /* border: 2px solid white; */
+            width: 30%;
+            /* margin-left: 35%;
+            margin: 30px 0px 30px 35%; */
+            /* box-shadow: 3px 3px 5px #000, -3px -3px 5px aqua; */
+        }
+
+        .audioimg {
+           
+            height: 350px;
+            width: 80%;
+            margin-top: 35px;
+            margin-left: 40px;
+            border-radius: 20px 0px;
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.9);
+            background-image: url("https://tse1.mm.bing.net/th?id=OIP.kxecmxH4vDdL2AgFrqqmYwHaEK&pid=Api&P=0&h=220");
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            
+        }
+
+        .prog {
+            width: 80%;
+            background-color: aqua;
+            height: 5px;
+            margin-top: 30px;
+            border-radius: 30px;
+            margin-left: 40px;
+        }
+
+        .songtitle {
+
+            width: 80%;
+            margin-left: 40px;
+            text-align: center;
+            margin-top: 20px;
+
+        }
+
+        .control {
+
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            margin-top: 40px;
+        }
+
+        .control button {
+            border-radius: 50%;
+            height: 60px;
+            width: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        aside{
+            height: 100%;
+            /* border: 2px solid white; */
+            width: 70%;
+            /* margin-left: 35%; */
+            /* margin: 30px 0px 30px 35%; */
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            
+            
+        }
+        
+
+        .songblock{
+            
+            width: 21%;
+            height: 40%;
+        }
+
+        .songimg{
+            height: 200px;
+            width: 100%;
+            margin-top: 10px;
+            border: 2px solid #555;
+
+        }
+        .songname{
+            height: 100px;
+            width: 100%;
+           
+            text-align: center;
+        }
+        .songname h2{
+
+            margin-top: 5px;
+            color:#fff;
+        }
+        .songname h5{
+            color: #555;
+        }
+
+
+
+
+
+
+
+
+        @media screen and (max-width:426px) {
+            .menu {
+                display: none;
+            }
+
+            .icon{
+                margin-left: 25px;
+            }
+
+            .menuicon {
+                display: block;
+            }
+
+            header {
+                height: 100%;
+                width: 100%;
+                margin-left: 0px;
+                box-shadow: none;
+
+            }
+
+            .audioimg {
+                
+                height: 250px;
+                width: 80%;
+                margin-top: 20px;
+                margin-left: 30px;
+                border-radius: 20px 0px;
+                box-shadow: 3px 3px 5px #bbb;
+            }
+
+            .prog {
+                width: 80%;
+                background-color: aqua;
+                height: 5px;
+                margin-top: 20px;
+                border-radius: 30px;
+                margin-left: 30px;
+            }
+
+            .songname {
+
+                width: 80%;
+                margin-left: 30px;
+                text-align: center;
+                margin-top: 10px;
+
+            }
+            .contener{
+                flex-direction: column;
+            }
+            
+            aside{
+                margin-top: 50px;
+                width: 100%;
+                flex-direction: column;
+                
+                
+            }
+            .songblock{
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                width: 100%;
+                height: 100px;
+                border-bottom: 1px solid gray;
+                
+                
+            }
+            .songimg{
+                
+                height: 80%;
+                width: 30%;
+                margin-left: 10px;
+            }
+
+            .songname{
+                text-align: start;
+                height: 80%;
+                width: 70%;
+                padding-top: 10px;
+            }
+
+            
+        }
+
+    
